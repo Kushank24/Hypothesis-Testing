@@ -11,7 +11,9 @@ let = let * 2;
 
 %df = (m-1)^2 = (3-1)^2 = 4
 Prob = 1 - chi2cdf(let, 4);
-[V,eigValues,W] = eig(t);
+[V,eigValues,W] = eig(t);   %[V,D,W] = eig(A,B) also returns full matrix W whose columns are the corresponding left eigenvectors, so that W'*A = D*W'*B.
+
+The generalized eigenvalue problem is to determine the solution to the equation Av = λBv, where A and B are n-by-n matrices, v is a column vector of length n, and λ is a scalar. The values of λ that satisfy the equation are the generalized eigenvalues.
 fprintf('Probability = %f\n', Prob);
 %fprintf('%f\n', let);
 eigValues
