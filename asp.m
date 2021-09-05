@@ -1,6 +1,6 @@
 function [] = asp(n, t)
 N = sum(sum(n));
-%the code calculates the average/mean by summing over all the columns to create a row of sums and then summing across the row to get the total sum of the matrix
+%the code sums over all the columns to create a row of sums and then summing across the row to get the total sum of the matrix
 let = 0;
 for i = 1:length(n)
     for j = 1:length(n)
